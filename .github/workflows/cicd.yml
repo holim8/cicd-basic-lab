@@ -1,3 +1,4 @@
+```
 # .github/workflows/cicd.yml — 단계 1: SSH + Private Key 직접 실행
 
 name: CI/CD - cicd-basic-lab to mylab-bastion
@@ -54,8 +55,7 @@ jobs:
           # 빈칸 6: 업로드할 파일 경로
           path: ./cicd-basic-lab/target/app.jar
           retention-days: 1
-
-
+          
   cd:
     # 빈칸 7: ci Job 완료 후 실행되도록 의존성 선언
     needs: ci
@@ -96,3 +96,4 @@ jobs:
             nohup java -jar app.jar > ./output.log 2>&1 &
             sleep 3
             echo "앱 실행 완료"
+```
