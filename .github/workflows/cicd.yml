@@ -93,4 +93,3 @@ jobs:
             nohup java -jar app.jar > ./output.log 2>&1 &
             sleep 3
             echo "앱 실행 완료"
-```
